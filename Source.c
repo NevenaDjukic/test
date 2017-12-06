@@ -32,6 +32,7 @@ int main()
 		for (unsigned i = 0; i < strlen(message); i++)
 			printf("%s ", nodes[message[i] - 'A']->l->code);
 		free(nodes);
+		free(message);
 	}
 	else
 		printf("Zbir vjerovatnoca nije 100. Unesena poruka se ne moze kodovati!\n");
